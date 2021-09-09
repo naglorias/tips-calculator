@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>Tips Calculator</title>
+  </head>
+  <body>
+    <div class="tip-container">
+        <div class="tips-input">
+            <div>
+                <label for="bill-amount"></label>Bill Amount</label>
+                <span class="material-icons">
+                  attach_money
+                  </span>
+                <input type="number" id="bill-amount" />
+              </div>
+              <div>
+                <label for="persons-num">Persons Number</label>
+                <span class="material-icons">
+                  people
+                  </span>
+                <input type="number" id="persons-number" />
+              </div>
+              <div>
+                <label for="quality-rates"> Service Quality rates</label>
+                <select name="levels" id="quality-rates">
+                  <option value="0" disabled selected>Choose Rate</option>
+                  <option value="30">30%(Great)</option>
+                  <option value="20">20%(Very good)</option>
+                  <option value="15">15%(Satisfact)</option>
+                  <option value="10">10%(Bad)</option>
+                  <option value="5">5%(Awful)</option>
+                </select>
+              </div>
+              
+                <button id="calculate">
+                  Calculate Tip
+                </button>    
+        </div>
+        <div class="showtip">
+        </div>
+    </div>
+  </body>
+</html>
